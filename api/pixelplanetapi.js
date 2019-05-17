@@ -43,11 +43,11 @@ module.exports = {
     }
     let parent = this;
     if (max != null)
-      if (max < 4000)
+      if (max < 3000)
         setTimeout(() => {
           parent.__fingersPrints[result].date = new Date();
           callback(null, result);
-        }, 4000 - max);
+        }, 3000 - max);
       else {
         callback(null, result);
         parent.__fingersPrints[result].date = new Date();
